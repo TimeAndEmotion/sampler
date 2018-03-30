@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Model Sampler</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  
+
+  <style type="text/css">
+    /* Some custom styles to beautify this example */
+    .demo-content{
+        padding: 15px;
+        font-size: 18px;
+        min-height: 300px;
+        background: #dbdfe5;
+        margin-bottom: 10px;
+    }
+    .demo-content.bg-alt{
+        background: #abb1b8;
+    }
+    .sampler {
+        background-color: white;
+    }
+
+    .btn-environment {
+      background-color: "#f95971"
+    }
+
+    .btn-spoof {
+        width: 90px !important;
+    }
+    .btn-value {
+        background-color: black !important;
+    }
+    .level {
+      background-color: gray;
+    }
+   
+    .TeamsEnv {
+      color: black;
+    }
+    .SelfEnv {
+      color: black;
+    }
+
+    .StrategyEnv {
+      color: black;
+    }
+    .StrategyOthers {
+      color:black;
+    }
+    .StrategyCreative {
+      color: black;
+    }
+    .StrategySelf {
+      color: black;
+    }
+    .StrategyCulture {
+      color: black;
+    }
+    .StrategyControl {
+      color: black;
+    }
+    .StrategyAbsorb {
+      color: black;
+    }
+    .StrategyImpact {
+      color: black;
+    }
+    .StrategyReflect {
+      color: black;
+    }
+
+    .OperationsEnv {
+      color: black;
+    }
+    .OperationsOthers {
+      color: black;
+    }
+    .OperationsSelf {
+      color: black;
+    }
+    .OperstionaCreative {
+      color: black;
+    }
+    .OperationsRational {
+      color: black;
+    }
+    .OperationsPlan {
+      color: black;
+    }
+    .OperationsStructure {
+      color" black;
+    }
+    .OperationsCulture {
+      color: black;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+   <div class="row">
+     <div class="col-xs-4">
+        <h2>Model Sampler</h2>
+        <ul id= "nav-select" class="nav nav-tabs">
+          <li class="active"><a href="#home">Strategy</a></li>
+          <li><a href="#menu1">Operations</a></li>
+          <li><a href="#menu2">Teams</a></li>
+          <!-- <li><a href="#menu3">Self</a></li> -->
+        </ul>
+
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <h3>Strategy</h3>
+            <p>
+                <button type="button" class="btn btn-danger btn-sm btn-spoof btn-environment">Env</button>
+                <button type="button" class="btn btn-danger btn-sm btn-spoof">Others</button>
+                <button type="button" class="btn btn-danger btn-sm btn-spoof">Self</button>
+                <br>
+                <button type="button" class="btn btn-warning btn-sm btn-spoof">Creative</button>
+                <button type="button" class="btn btn-warning btn-sm btn-spoof">Rational</button>
+                <button type="button" class="btn btn-warning btn-sm btn-spoof">Plan</button>
+                <br>
+                <button type="button" class="btn btn-success btn-sm btn-spoof">Structure</button>
+                <button type="button" class="btn btn-success btn-sm btn-spoof">Culture</button>
+                <button type="button" class="btn btn-success btn-sm btn-spoof">Control</button>
+                <br>
+                <button type="button" class="btn btn-primary btn-sm btn-spoof">Absorb</button>
+                <button type="button" class="btn btn-primary btn-sm btn-spoof">Impact</button>
+                <button type="button" class="btn btn-primary btn-sm btn-spoof">Reflect</button>
+                <br>
+            </P>
+          </div>
+          <div id="menu1" class="tab-pane fade in">
+            <h3>Operations</h3>
+            <p>
+                <button type="button" class="btn btn-danger btn-sm btn-spoof">Env</button>
+                <button type="button" class="btn btn-danger btn-sm btn-spoof">Others</button>
+                <button type="button" class="btn btn-danger btn-sm btn-spoof">Self</button>
+                <br>
+                <button type="button" class="btn btn-warning btn-sm btn-spoof">Creative</button>
+                <button type="button" class="btn btn-warning btn-sm btn-spoof">Rational</button>
+                <button type="button" class="btn btn-warning btn-sm btn-spoof">Plan</button>
+                <br>
+                <button type="button" class="btn btn-success btn-sm btn-spoof">Structure</button>
+                <button type="button" class="btn btn-success btn-sm btn-spoof">Culture</button>
+                <button type="button" class="btn btn-success btn-sm btn-spoof">Measures</button>
+                <br>
+                <button type="button" class="btn btn-primary btn-sm btn-spoof">Absorb</button>
+                <button type="button" class="btn btn-primary btn-sm btn-spoof">Impact</button>
+                <button type="button" class="btn btn-primary btn-sm btn-spoof">Reflect</button>
+                <br>
+            </p>
+          </div>
+          <div id="menu2" class="tab-pane fade in">
+            <h3>Teams</h3>
+            <p>
+                <button type="button" class="btn btn-danger btn-sm btn-spoof">Env</button>
+                <button type="button" class="btn btn-danger btn-sm btn-spoof">Others</button>
+                <button type="button" class="btn btn-danger btn-sm btn-spoof">Self</button>
+                <br>
+                <button type="button" class="btn btn-warning btn-sm btn-spoof">Creative</button>
+                <button type="button" class="btn btn-warning btn-sm btn-spoof">Rational</button>
+                <button type="button" class="btn btn-warning btn-sm btn-spoof">Plan</button>
+                <br>
+                <button type="button" class="btn btn-success btn-sm btn-spoof">Build</button>
+                <button type="button" class="btn btn-success btn-sm btn-spoof">Approve</button>
+                <button type="button" class="btn btn-success btn-sm btn-spoof">Deliver</button>
+                <br>
+                <button type="button" class="btn btn-primary btn-sm btn-spoof">Absorb</button>
+                <button type="button" class="btn btn-primary btn-sm btn-spoof">Impact</button>
+                <button type="button" class="btn btn-primary btn-sm btn-spoof">Reflect</button>
+                <br>
+              </p>
+          </div>
+          <div id="menu3" class="tab-pane fade in">
+            <h3>Self</h3>
+            <p>
+                <button type="button" class="btn btn-danger btn-sm btn-spoof">Env</button>
+                <button type="button" class="btn btn-danger btn-sm btn-spoof">Others</button>
+                <button type="button" class="btn btn-danger btn-sm btn-spoof">Self</button>
+                <br>
+                <button type="button" class="btn btn-warning btn-sm btn-spoof">Creative</button>
+                <button type="button" class="btn btn-warning btn-sm btn-spoof">Rational</button>
+                <button type="button" class="btn btn-warning btn-sm btn-spoof">Plan</button>
+                <br>
+                <button type="button" class="btn btn-success btn-sm btn-spoof">Connect</button>
+                <button type="button" class="btn btn-success btn-sm btn-spoof">Resilience</button>
+                <button type="button" class="btn btn-success btn-sm btn-spoof">Autonmy</button>
+                <br>
+                <button type="button" class="btn btn-primary btn-sm btn-spoof">Absorb</button>
+                <button type="button" class="btn btn-primary btn-sm btn-spoof">Impact</button>
+                <button type="button" class="btn btn-primary btn-sm btn-spoof">Reflect</button>
+                <br>
+              </p>
+          </div>
+        </div>
+
+
+        <!-- Show this wehn there is text to display-->
+        <div id="display_list">
+        </div>
+
+        <!-- Add items to bring up images. This is controlled on class derived from sampler button name -->
+        <div id="LevelStep"></div>
+           
+          <ul id = "listy">
+             <li class="StrategyEnv"><button class="btn-default">STEPLE</button></li>
+             <li class="StrategyEnv"><button class="btn-default">Hazards</button></li>
+             
+             <li class="StrategyOthers"><button class="btn-default">Salience</button></li>
+             <li class="StrategySelf"><button class="btn-default">JoHari</button></li>
+
+             <li class="StrategyCreative"><button class="btn-default">Creative Techniques Library</button></li>
+             <li class="StrategyRational"><button class="btn-default">BAFort</button></li>
+             <li class="StrategyRational"><button class="btn-default">StratoModels</button></li>
+             <li class="StrategyPlan"><button class="btn-default">SFA</button></li>
+             <li class="StrategyPlan"><button class="btn-default">QfD</button></li>
+             
+             <li class="StrategyStructure"><button class="btn-default">Mintzberg</button></li>
+             <li class="StrategyCulture"><button   class="btn-default">Paradigm</button></li>
+             <li class="StrategyControl"><button class="btn-default">StratCon</button></li>
+
+             
+             <li class="StrategyAbsorb"><button class="btn-default">Drift</button></li>
+             <li class="StrategyImpact"><button class="btn-default">SFA</button></li>
+             <li class="StrategyReflect"><button class="btn-default">StarStrat</button></li>
+
+
+
+             <li class="OperationsEnv"><button class="btn-default">Swot</button></li>
+             <li class="OperationsOthers"><button class="btn-default">Boisot</button></li>
+             <li class="OperationsSelf"><button class="btn-default">JoHari</button></li>
+
+             <li class="OperationsCreative"><button class="btn-default">Seagal Horne</button></li>
+             <li class="OperationsRational"><button class="btn-default">Boisot</button></li>
+             <li class="OperationsRational"><button class="btn-default">PNS</button></li>
+             <li class="OperationsRational"><button class="btn-default">Business Models</button></li>
+             <li class="OperationsPlan"><button class="btn-default">QfD</button></li>
+             <li class="OperationsPlan"><button class="btn-default">A3 Templates</button></li> 
+
+             <li class="OperationsStructure"><button class="btn-default">Home Horizon</button></li>
+             <li class="OperationsStructure"><button class="btn-default">F Laws</button></li>
+             <li class="OperationsCulture"><button class="btn-default">RP7</button></li>
+             <li class="OperationsCulture"><button class="btn-default">Climate</button></li>
+
+             <li class="OperationsMeasures"><button class="btn-default">Financial Ratios</button></li>
+             <li class="OperationsMeasures"><button class="btn-default">Lean Metrics</button></li>
+
+             <li class="OperationsAbsorb"><button class="btn-default">A3 Templates</button></li>
+             <li class="OperationsAbsorb"><button class="btn-default">Volere</button></li>
+
+             <li class="OperationsImpact"><button class="btn-default">StarStrat</button></li>
+             <li class="OperationsImpact"><button class="btn-default">Climate</button></li>
+             <li class="OperationsReflect"><button class="btn-default">StarStrat</button></li> 
+             <li class="OperationsReflect"><button class="btn-default">BAFort</button></li> 
+
+
+             <li class="TeamsEnv"><button class="btn-default">Herzberg</button></li>
+             <li class="TeamsOthers"><button class="btn-default">Boisot</button></li>
+             <li class="TeamsSelf"><button class="btn-default">JoHari</button></li>
+
+             <li class="TeamsCreative"><button class="btn-default">Climate</button></li>
+             <li class="TeamsCreative"><button class="btn-default">Creative Techniques Library</button></li>
+             <li class="TeamsRational"><button class="btn-default">Business Models</button></li>
+             <li class="TeamsRational"><button class="btn-default">Rational Analysis</button></li>
+             <li class="TeamsRational"><button class="btn-default">BAFort</button></li>
+
+             <li class="TeamsPlan"><button class="btn-default">Agile</button></li>
+
+             <li class="TeamsBuild"><button class="btn-default">RP7</button></li>
+             <li class="TeamsBuild"><button class="btn-default">TDD/BDD</button></li>
+             <li class="TeamsBuild"><button class="btn-default">CI CD</button></li>
+
+             <li class="TeamsApprove"><button class="btn-default">Lean Metrics</button></li>
+             <li class="TeamsApprove"><button class="btn-default">Creative Techniques Library</button></li>
+
+             <li class="TeamsDeliver"><button class="btn-default">DevOps</button></li>
+
+             <li class="TeamsAbsorb"><button class="btn-default">Team Value</button></li>
+             <li class="TeamsImpact"><button class="btn-default">Team Impact</button></li>
+
+             <li class="TeamsReflect"><button class="btn-default">Group Reflection</button>
+             <li class="TeamsReflect"><button class="btn-default">Climate</button>
+             <li class="TeamsReflect"><button class="btn-default">FlowTracker</button>
+
+             <li class="SelfEnv"><button class="btn-default">Self Check</button></li>
+
+          </ul>
+        </div>
+
+       
+       <div class="col-xs-8">
+            <div class="sampler_desc bg-alt"></div>
+            <div id="display">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+
+  // Varible to hold button states. May change to menus later
+  var ignore_buttons = ['STEPLE', 'Swot', 'Hazards', 'Salience'];
+  var sample_button_names = ["Env", "Others", "Self", "Creative", "Rational", "Plan", 
+                             "Absorb", "Impact", "Reflect", 
+                             "Connect", "Reslience", "Autonomy",
+                             "Structure", "Culture", "Control",
+                             "Controls", "Implement", "Measures",
+                             "Build", "Approve", "Deliver" ]
+
+  var lvl_text ="Strategy"; // default
+
+  $(document).ready(function() {
+
+
+      $(document).on('click', ".nav-tabs a", (function(){
+          $(this).tab('show');
+          lvl_text = $(this).tab().text();
+
+          $("#LevelStep").empty();
+           hideListItems();
+      }));
+
+      hideListItems();
+
+  });
+
+  $("#nav-select").on().click(function() {
+    $("#display").html("");
+  });
+
+  // handle clicks on Level and Step buttons
+  $("button").on().click(function() {
+
+    // clear the old graphic
+    $("#display").html("");
+
+    // clean out old descriptior
+    $("#LevelStep").html = "";
+
+    // Determine button
+    var btn_text = $(this).text();
+    var old_btn_text = "";
+    //alert(btn_text);
+
+
+    // If this is not a button for a picture of a model show the text for the level/step combo
+    if (!ignore_buttons.indexOf[btn_text]) {
+
+      $("#display_list").text = "";
+      // show html
+      var file_to_show = "./assets/" + lvl_text.toLowerCase() + "/" + btn_text.toLowerCase() + ".html";
+
+      //$( "#display_list" ).load( "./assets/strategy/Env.html" );
+      $( "#LevelStep" ).load( file_to_show );
+
+    } 
+
+
+    // Action to show models.
+    switch(btn_text) {
+
+      // Strategy
+      case("STEPLE"):
+        $("#display").load("./assets/strategy/outputs/steple.html");
+        break;
+
+      case("Hazards"):
+        $("#display").load("./assets/strategy/outputs/hazards.html");
+        break;
+
+ 
+       case("Self Check"):
+        $("#display").load("./assets/self/outputs/self_check.html");
+        break;
+
+        case("Salience"):
+         $("#display").load("./assets/strategy/outputs/salience.html");
+        break;
+
+        case("Creative Techniques Library"):
+        $("#display").load("./assets/strategy/outputs/ctl.html");
+        break;
+
+        case("JoHari"):
+        $("#display").load("./assets/strategy/outputs/johari.html");
+        break;
+
+        case("BAFort"):
+        $("#display").load("./assets/strategy/outputs/bafort.html");
+        break;
+
+        case("StratoModels"):
+        $("#display").load("./assets/strategy/outputs/stratomodel.html");
+        break;
+
+        case("QfD"):
+        $("#display").load("./assets/strategy/outputs/qfd.html");
+        break;
+
+        case("Mintzberg"):
+        $("#display").load("./assets/strategy/outputs/mintzberg.html");
+        break;
+
+        case("Petals"):
+        $("#display").load("./assets/strategy/outputs/culture.html");
+        break;
+
+        case("Drift"):
+        $("#display").load("./assets/strategy/outputs/drift.html");
+        break;
+
+
+        case("Paradigm"):
+        $("#display").load("./assets/strategy/outputs/paradigm.html");
+        break;
+
+        case("StratCon"):
+        $("#display").load("./assets/strategy/outputs/stratcontrol.html");
+        break;
+
+        case("Ghoshal"):
+        $("#display").load("./assets/strategy/outputs/ghoshal.html");
+        break;
+
+         case("SFA"):
+        $("#display").load("./assets/strategy/outputs/impact.html");
+        break;
+
+        case("StarStrat"):
+        $("#display").load("./assets/strategy/outputs/reflect.html");
+        break;
+
+
+       // Operations
+       case("Swot"):
+        $("#display").load("./assets/operations/outputs/swot.html");
+        break;
+
+        case("Boisot"):
+         $("#display").load("./assets/operations/outputs/boisot.html");
+        break;
+
+        case("JoHari"):
+        $("#display").load("./assets/operations/outputs/johari.html");
+        break;
+
+
+        case("Seagal Horne"):
+        $("#display").load("./assets/operations/outputs/seagal_horne.html");
+        break;
+
+
+        case("Business Models"):
+        $("#display").load("./assets/operations/outputs/bmn.html");
+        break;
+
+        case("PNS"):
+        $("#display").load("./assets/operations/outputs/pns.html");
+        break;
+
+        case("Home Horizon"):
+        $("#display").load("./assets/operations/outputs/home_horizon.html");
+        break;
+
+        case("F Laws"):
+        $("#display").load("./assets/operations/outputs/f_laws.html");
+        break;
+
+        case("RP7"):
+        $("#display").load("./assets/operations/outputs/rp7.html");
+        break;
+
+        case("Climate"):
+        $("#display").load("./assets/operations/outputs/climate.html");
+        break;
+
+       
+        case("Financial Ratios"):
+        $("#display").load("./assets/operations/outputs/financial_ratios.html");
+        break;
+
+        case("Lean Metrics"):
+        $("#display").load("./assets/operations/outputs/lean.html");
+        break;
+
+        case("Volere"):
+        $("#display").load("./assets/operations/outputs/volere.html");
+        break;
+
+        case("A3 Templates"):
+        $("#display").load("./assets/operations/outputs/a3.html");
+        break;
+
+        // Teams
+        case("Herzberg"):
+        $("#display").load("./assets/teams/outputs/herzberg.html");
+        break;
+
+        case("Boisot"):
+        $("#display").load("./assets/teams/outputs/herzberg.html");
+        break;
+
+        case("Rational Analysis"):
+        $("#display").load("./assets/teams/outputs/rational.html");
+        break;
+
+        case("Agile"):
+        $("#display").load("./assets/teams/outputs/agile.html");
+        break;
+
+        case("TDD/BDD"):
+        $("#display").load("./assets/teams/outputs/bdd_tdd.html");
+        break;
+
+        case("CI CD"):
+        $("#display").load("./assets/teams/outputs/cicd.html");
+        break;
+
+        case("DevOps"):
+        $("#display").load("./assets/teams/outputs/devops.html");
+        break;
+
+        case("Team Value"):
+        $("#display").load("./assets/teams/outputs/value.html");
+        break;
+
+        case("Team Impact"):
+        $("#display").load("./assets/teams/outputs/impact.html");
+        break;
+
+        case("Group Reflection"):
+        $("#display").load("./assets/teams/outputs/group_reflect.html");
+        break;
+
+        case("FlowTracker"):
+        $("#display").load("./assets/teams/outputs/flowtracker.html");
+        break;
+
+      }
+
+    // Make sure the button from the sapler is used rather than a model button   
+     // Selet file to load when a list item is clicked
+    if (sample_button_names.indexOf(btn_text) > -1) {
+      old_btn_text = btn_text;
+      showListItems(lvl_text + old_btn_text);
+    }
+
+
+  });
+
+
+  // Loop through each list item and show the relevant ones
+  function showListItems(option) {
+
+    var thislist = $("#listy li");
+
+    thislist.each(function(index, li)
+    {
+        console.log(li.className);
+        //alert($(this));
+       if ( li.className == option ) {
+          $(this).show();
+       } else {
+          $(this).hide();
+       }
+     })
+   
+    $("#listy").show();
+    };
+
+  
+  function hideListItems() {
+    $("#listy").hide();
+  }
+
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

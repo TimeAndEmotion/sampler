@@ -1,0 +1,857 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:css="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=Title content="">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 2008">
+<meta name=Originator content="Microsoft Word 2008">
+<link rel=File-List href="flaws_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Zak Moore</o:Author>
+  <o:Template>Normal.dotm</o:Template>
+  <o:LastAuthor>Zak Moore</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2016-11-02T06:36:00Z</o:Created>
+  <o:LastSaved>2016-11-02T06:37:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>1894</o:Words>
+  <o:Characters>10800</o:Characters>
+  <o:Company>zakobyte</o:Company>
+  <o:Lines>90</o:Lines>
+  <o:Paragraphs>21</o:Paragraphs>
+  <o:CharactersWithSpaces>13263</o:CharactersWithSpaces>
+  <o:Version>12.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:DontGrowAutofit/>
+   <w:DontAutofitConstrainedTables/>
+   <w:DontVertAlignInTxbx/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"Helvetica Neue";
+	panose-1:2 0 5 3 0 0 0 2 0 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@page Section1
+	{size:595.0pt 842.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-ansi-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-GB style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal>F Laws</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>1.&nbsp;&nbsp;&nbsp;&nbsp;You
+can’t teach an old dog or executive new tricks, or even that there are any new
+tricks&nbsp;</span><span style='font-size:10.0pt;font-family:Times'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>2.&nbsp;&nbsp;&nbsp;&nbsp;Knowledge
+is of two types, explicit and implicit, and knowing this is implicit&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>3.&nbsp;&nbsp;&nbsp;&nbsp;You
+rarely improve an organisation as a whole by improving the performance <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>&nbsp;of one or
+more of its parts&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>4.&nbsp;&nbsp;&nbsp;&nbsp;There
+is no point in asking consumers, who do not know what they want, to say what
+they want&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>5.&nbsp;&nbsp;&nbsp;&nbsp;All
+managers believe they can do their boss’s job better than their boss can, but
+they forget that their subordinates share the same belief about
+themselves&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>6.&nbsp;&nbsp;&nbsp;&nbsp;For
+managers the only conditions under which experience is the best teacher are
+ones in which no change takes place&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>7.&nbsp;&nbsp;&nbsp;&nbsp;The
+level of conformity in an organisation is in inverse proportion to
+its&nbsp;creative ability&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>8.&nbsp;&nbsp;&nbsp;&nbsp;The
+best reason for recording what one thinks is to discover what one thinks and to
+organise it in transmittable form&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>9.&nbsp;&nbsp;&nbsp;&nbsp;No
+corporation should retain a business unit that is worth more outside the
+corporation than within it&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>10.&nbsp;&nbsp;The
+amount of irrationality that executives attribute to others is directly
+proportional to their own&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>11.&nbsp;&nbsp;The
+future is better dealt with using assumptions than forecasts&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>12.&nbsp;&nbsp;An
+organisation’s planning horizon is the same as its CEO’s retirement
+horizon&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>13.&nbsp;&nbsp;The
+lower the rank of managers, the more they know about fewer things. The higher
+the rank of managers, the less they know about many things&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>14.&nbsp;&nbsp;The
+importance of executives is directly proportional to the size of their waiting
+rooms and the number of intervening secretaries&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>15.&nbsp;&nbsp;When
+managers say something is obvious, it does not mean that it is unquestionable,
+but rather that they are unwilling to have it questioned&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>16.&nbsp;&nbsp;The
+less sure managers are of their opinions, the more vigorously they defend
+them&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>17.&nbsp;&nbsp;The
+more lawyers an organisation employs, the less innovation it tolerates&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>18.&nbsp;&nbsp;Good
+teachers produce sceptics who ask their own questions and find their own
+answers; management gurus produce only unquestioning disciples&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>19.&nbsp;&nbsp;The
+only thing more difficult than starting something new in an organisation is
+stopping something old&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>20.&nbsp;&nbsp;Acceptance
+of a recommended solution to a problem depends more on the manager’s trust of
+its source than on the content of the recommendation or the competence of its
+source&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>21.&nbsp;&nbsp;The
+less managers understand their business, the more variables they require to
+explain it&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>22.&nbsp;&nbsp;The
+higher the rank of managers, the less is the distance between their offices and
+their restrooms&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>23.&nbsp;&nbsp;Business
+schools are as difficult to change as cemeteries, and for the same
+reasons&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>24.&nbsp;&nbsp;Curiosity
+is the ‘open sesame’ to learning, even for managers&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>25.&nbsp;&nbsp;The
+legibility of a male manager’s handwriting is in inverse proportion to his
+seniority&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>26.&nbsp;&nbsp;Executives
+must be prevented from receiving any information about frauds or immoral acts
+committed by their subordinates&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>27.&nbsp;&nbsp;There
+is nothing that a manager wants done that educated subordinates cannot
+undo&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>28.&nbsp;&nbsp;The
+more corporate executives believe in a free (unregulated) market, the more they
+believe in a regulated internal market&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>29.&nbsp;&nbsp;The
+amount of time a committee wastes is directly proportional to its size&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>30.&nbsp;&nbsp;It
+is generally easier to evaluate an organisation from the outside-in than from
+the inside-out&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>31.&nbsp;&nbsp;Development
+is less about how much an organisation has than how much it can do with whatever
+it has&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>32.&nbsp;&nbsp;Smart
+subordinates can make their managers look bad no matter how good they are, and
+make their managers look good no matter how bad they are&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>33.&nbsp;&nbsp;In
+an organisation that disapproves of mistakes, but identifies only errors of
+commission, the best strategy for anyone who seeks job security is to do
+nothing&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>34.&nbsp;&nbsp;The
+best organisational designers are ones who know how to beat any organisation designed
+by others&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>35.&nbsp;&nbsp;The
+offence taken by an organisation from negative press is directly proportional
+to its truthfulness&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>36.&nbsp;&nbsp;The
+less important an issue is, the more time managers spend discussing it&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>37.&nbsp;&nbsp;The
+time spent waiting to get into an executive’s office is directly proportional
+to the difference in rank between the executive and the one waiting to get
+in&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>38.&nbsp;&nbsp;Administration,
+management and leadership are not the same thing&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>39.&nbsp;&nbsp;In
+acquisitions the value added to the acquired company is much more important
+than the value added to the acquiring company&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>40.&nbsp;&nbsp;Business
+schools are high security prisons of the mind&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>41.&nbsp;&nbsp;No
+matter how large and successful an organisation is, if it fails to adapt to
+change, then, like a dinosaur, it will become extinct&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>42.&nbsp;&nbsp;The
+size of a CEO’s bonus is directly proportional to how much more the company
+would have lost had it not been for him or her&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>43.&nbsp;&nbsp;The
+less managers expect of their subordinates, the less they get&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>44.&nbsp;&nbsp;The
+amount of money spent to broadcast a television or radio commercial is
+inversely related to its truthfulness and relevance&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>45.&nbsp;&nbsp;All
+work and no play is a prescription for low quantity and quality of
+outputs&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>46.&nbsp;&nbsp;A
+bureaucrat is one who has the power to say ‘no’ but none to say ‘yes’&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>47.&nbsp;&nbsp;Teleconferencing
+is an electronic way of wasting more time than is saved in travel <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>48.&nbsp;&nbsp;The
+more important the problem a manager asks consultants for help on, the less useful
+and more costly their solutions are likely to be&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>49.&nbsp;&nbsp;The
+distance between managers’ offices is directly proportional to the difference
+between the ranks of their occupants&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>50.&nbsp;&nbsp;The
+sine qua non of leadership is talent, and talent cannot be taught&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>51.&nbsp;&nbsp;Managers
+who don’t know how to measure what they want settle for wanting what they can
+measure&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>52.&nbsp;&nbsp;A
+great big happy family requires more loyalty than competence, but a great big
+happy business requires more competence than loyalty&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>53.&nbsp;&nbsp;If
+an organisation must grow, it is better for it to grow horizontally than
+vertically&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>54.&nbsp;&nbsp;Corporate
+development and corporate growth are not the same thing and neither requires
+the other&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>55.&nbsp;&nbsp;The
+uniqueness of an organisation lies more in what it hides than what it
+exposes&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>56.&nbsp;&nbsp;The
+telephone, which once facilitated communication, now increasingly obstructs
+it&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>57.&nbsp;&nbsp;Managers
+cannot learn from doing things right, only from doing things wrong&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>58.&nbsp;&nbsp;The
+principle objective of corporate executives is to provide themselves with the
+standard of living and quality of work life to which they aspire&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>59.&nbsp;&nbsp;The
+principal obstruction to an organisation getting to where its managers most
+want it to be lies in the minds of its managers&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>60.&nbsp;&nbsp;A
+corporation’s external boundaries are generally much more penetrable than its
+internal ones&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>61.&nbsp;&nbsp;It
+is very difficult for those inside a box to think outside of it&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>62.&nbsp;&nbsp;The
+level of organisational development is directly proportional to the size of the
+gap between where the organisation is and where it wants to be&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>63.&nbsp;&nbsp;Most
+stated, corporate objectives are platitudes &#8212;they say nothing, but hide
+this fact behind words&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>64.&nbsp;&nbsp;Most
+corporations and business schools are less than the sum of their parts&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>65.&nbsp;&nbsp;Managers
+who try to make themselves look good by making others look bad, look worse than
+those they try to make look bad&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>66.&nbsp;&nbsp;The
+morality that many managers espouse in public is inversely proportional to the
+morality they practise in private&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>67.&nbsp;&nbsp;The
+higher their rank, the less managers perceive a need for continuing education,
+but the greater the need for it&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>68.&nbsp;&nbsp;The
+number of references and citations in a book is inversely proportional to the
+amount of thinking the author has done&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>69.&nbsp;&nbsp;No
+computer is smarter than those who program it. Those who program computers are
+seldom smarter than those who try to use their output&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>70.&nbsp;&nbsp;Managers
+cannot talk and listen at the same time; in fact, most managers find it very
+difficult to listen even when they are not talking&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>71.&nbsp;&nbsp;Overheads,
+slides and PowerPoint projectors are not visual aids to managers. They
+transform managers into auditory aids to the visuals&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>72.&nbsp;&nbsp;Conversations
+in a lavatory are more productive than those in the boardroom&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>73.&nbsp;&nbsp;To
+managers an ounce of wisdom is worth a pound of understanding&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>74.&nbsp;&nbsp;The
+press is the sword of Damocles that hangs over the head of every
+organisation&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>75.&nbsp;&nbsp;The
+more managers try to get rid of what they don’t want, the less likely they are
+to get what they do want&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>76.&nbsp;&nbsp;Focusing
+on an organisation’s ‘core competency’ diverts attention from its core
+competencies&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>77.&nbsp;&nbsp;The
+greater the fee paid to corporate directors, the less their contributions are
+likely to be&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>78.&nbsp;&nbsp;A
+manager’s fear of computers is directly proportional to the square of his/her
+age&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>79.&nbsp;&nbsp;Most
+managers know less about managing people than the conductor of an orchestra
+does&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>80.&nbsp;&nbsp;Complex
+problems do not have simple solutions, only simple minded managers and their
+consultants think they do&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>81. &nbsp;When
+nothing can make things worse, anything can make them better 35.In Transforming
+the Systems Movement, at www.acasa.upenn.edu/RLAConfPaper.pdf The New
+Management f-Laws <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>82. To do more of
+what is not working currently, is to do more of what will not work in the
+future <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>83. Those who
+successfully managed a company to maturity are unlikely to be able to manage it
+back to youth <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>84. Maldistribution
+of the quality of life at work reduces morale and results in poor quality
+products and services <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>85. Greed at the
+top is the fuel used to increase the maldistribution of wealth within and
+between corporations, and within and between societies <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>86. Viewing
+things differently is not a defect: it is an advantage <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>87. It is better
+to dissolve a problem than solve it <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>88. Giving
+managers the information needed to (dis)solve a problem does not necessarily
+improve their performance <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>89. The best way
+to find out how to get from here to there is to find out how to get from there
+to here <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>90. The best
+place to begin an intellectual journey is at its end <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>91. Necessity may
+be the mother of invention, but invention is the father of desire <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>92. Managers
+should never accept the output of a technologically-based support system unless
+they understand exactly what the system does and why <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>93. The amount of
+profit that can be got from the sale of a product or service is inversely
+proportional to the need for it <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>94. Meetings that
+share ignorance cannot produce knowledge <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>95. Employees,
+and even managers, are not expected to be smarter than their bosses <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>96. Continuous
+improvement is the longest distance between two points: where an organisation
+is and where it wants to be <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>97. Benchmarking
+is a not-very-subtle form of imitation. It condemns organisations to following
+not leading <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>98. Consensus is
+practical, not necessarily principled, agreement <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>99. In a
+classroom, the teacher learns most <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>100. There is
+never a better place to initiate a change than where the one who asks where the
+best place is, is <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>101. Risk
+aversion is a core competency of most managers <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>102. The more
+managers believe in a democratic society the more they insist on autocratic
+corporations <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>103. The one
+thing that every individual and organisation must want is the ability to obtain
+whatever they want <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>104. There is no
+such thing as risk-free agreement <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>105. CEOs should
+never select their successors <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>106. To managers,
+an ounce of information is worth a pound of data <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>107. To managers,
+an ounce of knowledge is worth a pound of information <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>108. To managers,
+an ounce of understanding is worth a pound of knowledge <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>109. To managers
+an ounce of wisdom is worth a pound of understanding <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>110. Giving
+managers the information they want may not improve their performance <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>111. Rightsizing
+treats a symptom but not the disease <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>112. Improving
+communication between the parts of an organisation may destroy it <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>113. The
+stability of a family business and of the family that owns it are inversely
+proportional to the number of family members employed in the business <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>114.
+Communication is never good in itself <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>115. The
+prominence of a business author is proportional to the number of times he or
+she has published the same article or book <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>116.
+Organisations fail more often because of what they have not done than because
+of what they have done <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>117. The quality
+of a business school is inversely proportional to the average amount of
+teaching its faculty does <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>118. Successful
+management consultants are ones who support managers’ unsupportable beliefs <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>119. Problems are
+not objects of experience, but mental constructs extracted from it by analysis <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>120. It is better
+to control the future imperfectly than to forecast it perfectly <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>121. Competition
+is conflict embedded in cooperation; the more conflict there is, the more
+cooperation there is <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>122. How far an
+organisation can evade government regulations is proportional to the amount it
+contributed to the election of successful candidates <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Helvetica Neue"'>123. In
+advertising, all competing products or services have a common property: each is
+better than the others <o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
